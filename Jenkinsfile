@@ -2,7 +2,7 @@
 node('master') {
 
     stage('stage1: Git checkout main branch') {
-        sh "cd jenkins-stress-test-4 && git pull origin main"
+        sh "git clone https://github.com/khaozi/jenkins-stress-test3.git; cd jenkins-stress-test4 && git pull origin main"
     }
 
     stage('stage2: and delete old versions') {
